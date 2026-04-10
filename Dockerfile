@@ -1,6 +1,6 @@
 FROM pytorch/pytorch:2.11.0-cuda12.8-cudnn9-devel
 
-RUN pip install --no-cache-dir "jupyterlab"
+RUN pip install --no-cache-dir --break-system-packages "jupyterlab"
 
 EXPOSE 8888
 
