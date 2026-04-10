@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [[ $JUPYTER_PASSWORD ]]; then
+    jupyter lab \
+        --allow-root \
+        --no-browser \
+        --port=8888 \
+        --ip=* \
+        --ServerApp.token=$JUPYTER_PASSWORD \
+        --ServerApp.allow_origin=* \
+        --ServerApp.preferred_dir=/workspace
+else
+    sleep infinity
+fi
