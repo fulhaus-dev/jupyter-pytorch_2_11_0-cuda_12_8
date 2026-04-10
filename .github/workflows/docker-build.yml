@@ -20,4 +20,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/gemma4-notebook:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/jupyter-pytorch_2_11_0-cuda_12_8:latest
